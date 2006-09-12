@@ -1,7 +1,7 @@
 # QuicktimeHelper
 module QuicktimeHelper
 
-  def quicktime_tag(filename_with_path, width, height, id, options = {})
+  def quicktime_tag(filename_with_path, id, width, height, options = {})
     
     quicktime_params = ""
     
