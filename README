@@ -9,13 +9,13 @@ The quicktime helper makes use of Geoff Stearns' qtobject.js to give you a stand
 
 After including the 'qtobject.js' file in your view, using the quicktime_tag helper is simple:
 
-<%= quicktime_tag(:path_to_video_file, :width, :height, options = {} ) %>
+<%= quicktime_tag(:path_to_video_file, :width, :height, :id, options = {} ) %>
 
 
 
 Extra parameters that are used by the quicktime embed object can be added using the options hash. For Example:
 
-<%= quicktime_tag(:path_to_video_file, :width, :height, {:loop => true, :autoplay => false} ) %>
+<%= quicktime_tag(:path_to_video_file, :width, :height, :id, {:loop => true, :autoplay => false} ) %>
 
 
 

@@ -1,7 +1,7 @@
 # QuicktimeHelper
 module QuicktimeHelper
 
-  def quicktime_tag(filename_with_path, width, height, options = {})
+  def quicktime_tag(filename_with_path, width, height, id, options = {})
     
     quicktime_params = ""
     
@@ -9,7 +9,7 @@ module QuicktimeHelper
 	
   	"<script type=\"text/javascript\">
   	// <![CDATA[
-  		var myQTObject = new QTObject(\"#{filename_with_path}\", \"video_#{filename_with_path}\", \"#{width}\", \"#{options[:controller] == false ? height : height + 15 }\");
+  		var myQTObject = new QTObject(\"#{filename_with_path}\", \"#{id}\", \"#{width}\", \"#{options[:controller] == false ? height : height + 15 }\");
   		#{quicktime_params}
   		myQTObject.write();
   	// ]]>
