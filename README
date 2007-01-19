@@ -11,6 +11,11 @@ After including the 'qtobject.js' file in your view, using the quicktime_tag hel
 
 <%= quicktime_tag(:path_to_video_file, :id, :width, :height, options = {} ) %>
 
+You can also use a placeholder image by adding :placeholder to the options hash. Pass in a path to an image and you're 
+Quicktime video will be preceded with a placeholder image, click it to start the movie. You know, just like Apple Trailers.
+
+<%= quicktime_tag(:path_to_video_file, :id, :width, :height, {:placeholder => "/images/click-to-play.gif", :loop => true, :autoplay => false} ) %>
+
 
 
 Extra parameters that are used by the quicktime embed object can be added using the options hash. For Example:
